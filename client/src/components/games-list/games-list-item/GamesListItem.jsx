@@ -1,13 +1,19 @@
-export default function GamesListItem({ _id, title, category,imagUrl }) {
+import {Link} from 'react-router-dom';
+
+export default function GamesListItem({
+   _id,
+  title,
+  category,
+  imagUrl }) {
   return (
     <div className="allGames">
       <div className="allGames-info">
         <img src={imagUrl} />
         <h6>{category}</h6>
         <h2>{title}</h2>
-        <a href="#" className="details-button">
+        <Link to={`/games/${_id}/details`} className="details-button">
           Details
-        </a>
+        </Link>
       </div>
     </div>
   );
