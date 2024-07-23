@@ -14,5 +14,21 @@
         "imagUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuoHkxwvKRGeugh9jOFBZnGMlxpMRGo1bGZQ&s",
         "summary": "Eve Online is a space-based, persistent world massively multiplayer online role-playing game developed and published by CCP Games. Players of Eve Online can participate in a number of in-game professions and activities, including mining, piracy, manufacturing, trading, exploration, and combat",
         "_id": "12d61168-f500-4ec9-9627-91bfed04fe87"
+    },
+    "9ba31852-64a1-4aa3-bcf8-c363cb9351aa": {
+        "title": "Overwatch 2",
+        "category": "FPS Action",
+        "maxLevel": "100",
+        "imagUrl": "https://imageio.forbes.com/specials-images/imageserve/633d0766771155cd9eed2e0f/Overwatch-2-heroes-Sojourn--Kiriko-and-Junker-Queen/960x0.jpg?format=jpg&width=960",
+        "summary": "Overwatch was a 2016 team-based multiplayer first-person shooter game by Blizzard Entertainment. The game was first released for PlayStation 4, Windows, and Xbox One in May 2016 and Nintendo Switch in October 2019. Cross-platform play was supported across all platforms.",
+        "_id": "9ba31852-64a1-4aa3-bcf8-c363cb9351aa"
+    },
+    "f5e30fd1-e314-4d70-8c71-a77067f9b685": {
+        "title": "Heroes of the Storm",
+        "category": "MOBA",
+        "maxLevel": "25",
+        "imagUrl": "https://wowvendor.com/app/uploads/2023/10/thumb-80.jpg",
+        "summary": "Heroes of the Storm is a crossover multiplayer online battle arena video game developed and published by Blizzard Entertainment. Announced at BlizzCon 2010, it was released on June 2, 2015 for macOS and Windows.",
+        "_id": "f5e30fd1-e314-4d70-8c71-a77067f9b685"
     }
 }
