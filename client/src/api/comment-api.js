@@ -4,11 +4,15 @@ const GAMES_URL = "http://localhost:3030/jsonstore/games";
 const create = async (commentId, username, text) => {
    const response = await request
    .post(`${GAMES_URL}/${commentId}/comments`, { username, text });
-
-   const comments = Object.values(response);
-   
-   return comments;
     
+   return response;
+}
+
+const getAll = async (gameId) => {
+    const response = await request.get(`${GAMES_URL}/${gameId}/comments`);
+
+    const comments = Object.values(response);
+    return comments;
 }
 
 export default {

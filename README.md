@@ -27,8 +27,8 @@
 ## 5. Comments (Advanced)
 - [x] Create service for nested resource `comments`
 - [x] Post comment to server
-- [] Read comments from server
-- [] Add comments in the component
+- [x] Read comments from server
+- [x] Add comments in the component
 - [] Clear form
 
 
