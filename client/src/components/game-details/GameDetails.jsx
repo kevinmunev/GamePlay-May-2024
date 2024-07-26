@@ -32,6 +32,8 @@ export default function GameDetails() {
             },
         }));
 
+        setUsername("");
+        setComment("");
     };
 
     return (
