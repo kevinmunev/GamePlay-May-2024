@@ -32,7 +32,7 @@
 - [x] Clear form
 ## 6. API Hooks
 - [x] Form Hook
-- [] GameAPI Hooks
+- [x] GameAPI Hooks
 - [] Comments Hooks
 ## 7. Authentication
 - [] Auth API

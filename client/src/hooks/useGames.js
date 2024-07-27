@@ -14,3 +14,20 @@ export function useGetAllGames() {
 
     return [games, setGames];
 }
+
+export function useGetOneGames(gameId) {
+    const [game, setGame] = useState({});
+
+    useEffect(() => {
+        (async () => {
+            const game = await gamesApi.getOne(gameId);
+
+            setGame(game);
+        })();
+    }, [gameId]);
+
+    return [
+        game,
+        setGame
+    ]
+}
