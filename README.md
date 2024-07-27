@@ -30,5 +30,14 @@
 - [x] Read comments from server
 - [x] Add comments in the component
 - [x] Clear form
-
+## 6. API Hooks
+- [x] Form Hook
+- [] GameAPI Hooks
+- [] Comments Hooks
+## 7. Authentication
+- [] Auth API
+- [] Auth API hook
+- [] Auth state & context
+- [] Login
+- [] Register
 
