@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-export function useForm(initialValue, submitCallback) {
+export const useForm = (initialValue, submitCallback) => {
     const [values, setValues] = useState(initialValue);
 
     const changeHandler = (e) => {
         setValues((prevState) => ({
             ...prevState,
-            [e.target.name]: [e.target.value],
+            [e.target.name]: e.target.value,
         }));
     };
 

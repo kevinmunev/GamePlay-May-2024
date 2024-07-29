@@ -10,7 +10,6 @@ export default function Home() {
     useEffect(() => {
         (async () => {
             const result = await gamesApi.getAll();
-            console.log(result)
             const games = result.reverse().slice(0, 3);
 
             setLatestGames(games);
