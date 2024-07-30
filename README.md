@@ -35,9 +35,16 @@
 - [x] GameAPI Hooks
 - [] Comments Hooks
 ## 7. Authentication
-- [] Auth API
-- [] Auth API hook
-- [] Auth state & context
-- [] Login
+- [x] Auth API
+  - [x] Login
+  - [] Register
+  - [] Logout
+- [x] Auth API hook
+  - [x] Login Hook
+  - [] Register Hook
+  - [] Logout hook
+- [x] Auth state & context
+- [x] Token management 
+- [x] Login
 - [] Register
 
