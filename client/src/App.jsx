@@ -17,6 +17,7 @@ function App() {
         setAuthState(authData);
     };
     const contextData = {
+        userId: authState._id,
         email: authState.email,
         accessToken: authState.accessToken,
         isAuthenticated: !!authState.email,
@@ -24,11 +25,11 @@ function App() {
     };
 
     return (
-        <div id="box">
-            <Header />
+        <AuthContext.Provider value={contextData}>
+            <div id="box">
+                <Header />
 
-            <main id="main-content">
-                <AuthContext.Provider value={contextData}>
+                <main id="main-content">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/login" element={<Login />} />
@@ -40,9 +41,9 @@ function App() {
                         />
                         <Route path="/games/create" element={<GameCreate />} />
                     </Routes>
-                </AuthContext.Provider>
-            </main>
-        </div>
+                </main>
+            </div>
+        </AuthContext.Provider>
     );
 }
 

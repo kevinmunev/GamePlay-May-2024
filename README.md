@@ -44,7 +44,8 @@
   - [] Register Hook
   - [] Logout hook
 - [x] Auth state & context
-- [x] Token management 
-- [x] Login
-- [] Register
+  - [x] Token management 
+  - [x] Login
+  - [] Register
+  - [] Authorized Requests
 
