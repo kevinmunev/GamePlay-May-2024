@@ -37,15 +37,25 @@
 ## 7. Authentication
 - [x] Auth API
   - [x] Login
-  - [] Register
+  - [x] Register
   - [] Logout
 - [x] Auth API hook
   - [x] Login Hook
-  - [] Register Hook
+  - [x] Register Hook
   - [] Logout hook
 - [x] Auth state & context
   - [x] Token management 
   - [x] Login
-  - [] Register
-  - [] Authorized Requests
+  - [x] Register
+  - [x] Add form validation
+- [] Logout
+- [] Authorized Requests
+## 8. UI Implementation 
+- [x] Dynamic navigation
+- [] Create game
+  - [] API function
+  - [] Hook
+- [ ] Latest games
+
+
 
