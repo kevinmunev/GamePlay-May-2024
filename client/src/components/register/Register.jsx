@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
 import { useNavigate } from "react-router-dom";
@@ -5,17 +6,19 @@ import { useNavigate } from "react-router-dom";
 const initialValues = { email: "", password: "", rePass: "" };
 
 export default function Register() {
+    const [error, setError] = useState('');
     const navigate = useNavigate();
     const register = useRegister();
     const registerHandler = async ({ email, password, rePass }) => {
         if (password !== rePass) {
-            alert("Password does not match.");
+            setError('Password does not match');
             return;
         }
         try {
             await register(email, password);
             navigate("/");
         } catch (err) {
+            setError(err.message)
             console.log(err.message);
         }
     };
@@ -57,9 +60,10 @@ export default function Register() {
                         id="rePass"
                         value={values.rePass}
                         onChange={changeHandler}
-                        
                     />
-
+                    {error && <p>
+                        <span style={{fontWeight:"bold", color:"red", fontStyle: "italic"}}>{error}</span>
+                    </p>}
                     <input
                         className="btn submit"
                         type="submit"
