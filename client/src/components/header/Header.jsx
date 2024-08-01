@@ -6,7 +6,6 @@ export default function Header() {
     const { isAuthenticated } = useContext(AuthContext);
     return (
         <header>
-            {/* <!-- Navigation --> */}
             <h1>
                 <Link className="home" to="/">
                     GamesPlay
@@ -25,8 +24,6 @@ export default function Header() {
                         <Link to="/register">Register</Link>
                     </div>
                 )}
-
-                {/* <!-- Guest users --> */}
             </nav>
         </header>
     );

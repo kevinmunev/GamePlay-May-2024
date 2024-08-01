@@ -26,8 +26,11 @@ export function useGetOneGames(gameId) {
         })();
     }, [gameId]);
 
-    return [
-        game,
-        setGame
-    ]
+    return [game, setGame];
+}
+
+export function useCreateGame() {
+    const gameCreateHandler = async (gameData) => gamesApi.create(gameData);
+    
+    return gameCreateHandler;
 }
