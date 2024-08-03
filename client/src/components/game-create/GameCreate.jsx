@@ -5,16 +5,16 @@ const initialValues = {
     title: "",
     category: "",
     maxLevel: "",
-    imageUrl: "",
+    imagUrl: "",
     summary: "",
 };
 export default function GameCreate() {
     const navigate = useNavigate();
-    const create = useCreateGame();
+    const createGame = useCreateGame();
 
     const createHandler = async (values) => {
         try {
-            const { _id: gameId } = await create(values);
+            const { _id: gameId } = await createGame(values);
             navigate(`/games/${gameId}/details`);
         } catch (err) {
             //TODO: set error state and display error message!
@@ -66,8 +66,8 @@ export default function GameCreate() {
                     <input
                         type="text"
                         id="imageUrl"
-                        name="imageUrl"
-                        value={values.imageUrl}
+                        name="imagUrl"
+                        value={values.imagUrl}
                         onChange={changeHandler}
                         placeholder="Upload a photo..."
                     />
