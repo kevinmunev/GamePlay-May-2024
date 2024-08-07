@@ -58,5 +58,6 @@
 - [ ] Latest games
 ## 9. Refactoring
 - [x] Extract Auth state management from App
+- [x] Create usePersistedState hook 
 
 
